@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Android Launcher Panel (Minimal)</title>
+<style>
+body { font-family: sans-serif; padding:20px; }
+h2 { margin-top:30px; border-bottom:1px solid #ccc; padding-bottom:5px; }
+a { display:block; margin:8px 0; font-size:16px; }
+</style>
+</head>
+<body>
+
+<h2>1. Dialer Actions</h2>
+<a href="tel:">Open Dialer (Empty)</a>
+<a href="tel:12345">Dial 12345</a>
+<a href="tel:*123#">Dial *123#</a>
+<a href="tel:*#06#">Show IMEI</a>
+<a href="tel:*#*#4636#*#*">Device Info Menu (*#*#4636#*#*)</a>
+<a href="tel:*#0*#">Hardware Test Menu (*#0*#)</a>
+
+<h2>2. System Settings</h2>
+<a href="intent:#Intent;action=android.settings.WIFI_SETTINGS;end">Wi-Fi Settings</a>
+<a href="intent:#Intent;action=android.settings.BLUETOOTH_SETTINGS;end">Bluetooth Settings</a>
+<a href="intent:#Intent;action=android.settings.LOCATION_SOURCE_SETTINGS;end">Location Settings</a>
+<a href="intent:#Intent;action=android.settings.INPUT_METHOD_SETTINGS;end">Keyboard / Input Settings</a>
+<a href="intent:#Intent;action=android.settings.BATTERY_SETTINGS;end">Battery Settings</a>
+<a href="intent:#Intent;action=android.settings.SECURITY_SETTINGS;end">Security Settings</a>
+<a href="intent:#Intent;action=android.settings.DATE_SETTINGS;end">Date & Time Settings</a>
+<a href="intent:#Intent;action=android.settings.ACCESSIBILITY_SETTINGS;end">Accessibility Settings</a>
+<a href="intent:#Intent;action=android.settings.APPLICATION_DETAILS_SETTINGS;end">Current App Info (Browser)</a>
+
+<h2>3. App Launchers</h2>
+<a href="intent://send?text=test#Intent;scheme=smsto;package=com.whatsapp;end">Open WhatsApp (if installed)</a>
+<a href="intent:#Intent;action=android.media.action.IMAGE_CAPTURE;end">Open Camera</a>
+<a href="intent:#Intent;action=android.intent.action.GET_CONTENT;type=image/*;end">Open Image Picker</a>
+
+<h2>4. Hidden / Diagnostic</h2>
+<a href="tel:*#*#4636#*#*">Device Information (Android Testing Menu)</a>
+<a href="intent:#Intent;action=android.intent.action.POWER_USAGE_SUMMARY;end">Battery Usage Graph</a>
+
+</body>
+</html>
